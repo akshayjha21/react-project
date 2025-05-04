@@ -15,7 +15,7 @@
 // }
 
 //destructuring the props
-
+import Fruits from "./fruits.jsx"
 function Hello(props){
     return(
         <div>
@@ -25,6 +25,7 @@ function Hello(props){
             <h2>
                {props.person.message}
             </h2>
+            <Fruits/>
         </div>
     )
 }
