@@ -1,3 +1,4 @@
+import Fruit from "./fruit.jsx"
 export default function Fruits(){
 // const fruits=["apple","banana","watermelon","pineapple"]//
 //array with the objects inside it
@@ -21,13 +22,8 @@ const fruits=[
 return <ul>
         {
             fruits.map((fruit)=>(
-                <li key={fruit}>
-                    {fruit.emoji}
-                    {fruit.name}
-                    {fruit.price}
-                    </li>
-            ))
-           
+              <Fruit key={fruit.name} name= {fruit.name} emoji={fruit.emoji} price={fruit.price}/>
+            )) 
         }
     
 </ul>
